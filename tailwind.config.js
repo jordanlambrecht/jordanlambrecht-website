@@ -5,12 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      heading: " Poppins, sans-serif",
+      body: "Poppins, sans-serif",
+    },
     extend: {
       colors: {
-        gray: "#f3f3f3",
+        gray: { 300: "#f3f3f3", 400: "#888", DEFAULT: "#f3f3f3" },
+
         coral: "rgb(255, 69, 0)",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

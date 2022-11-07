@@ -68,7 +68,7 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div className='prose prose-slate prose-lg font-body'>
+          <div className='w-full lg:w-2/5 prose prose-slate prose-lg font-body'>
             <p>
               Hi, I&apos;m Jordan Lambrecht, a Professional Something or Another
               based out of Lincoln, Nebraska.

@@ -96,6 +96,7 @@
 h1 {
   @apply font-heading;
 }
-a {
-  @apply text-coral !important;
+a,
+.prose p a {
+  @apply text-coral;
 }

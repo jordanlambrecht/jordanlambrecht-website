@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "@layouts/layout"
+import type { AppProps } from "next/app"
 
 import PlausibleProvider from "next-plausible"
-import "./styles/globals.css"
+import "@/styles/globals.css"
 
 const plausibleConfig = {
   domain: "jordanlambrecht.com",
@@ -13,7 +14,7 @@ const plausibleConfig = {
   enabled: true,
 }
 
-export default function MyApp({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <PlausibleProvider {...plausibleConfig}>
       <Layout>

@@ -3,6 +3,10 @@ import { withPlausibleProxy } from "next-plausible"
 
 const nextConfig = {
   reactStrictMode: true,
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
 }
 
 export default withPlausibleProxy({

@@ -17,7 +17,8 @@
       "@parts/*": ["components/*"],
       "@layouts/*": ["components/layouts/*"],
       "@icons/*": ["components/icons/*"],
-      "@modules/*": ["components/modules/*"]
+      "@modules/*": ["components/modules/*"],
+      "@/styles/*": ["styles/*"]
     },
     "baseUrl": "./",
     "target": "ES2022"

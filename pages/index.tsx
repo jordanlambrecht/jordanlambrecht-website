@@ -24,7 +24,7 @@ export default function Home() {
             "Hi, I'm Jordan Lambrecht, a Professional Something or Another in Lincoln, Nebraska.",
           images: [
             {
-              url: "https://jordanlambrecht.com/img/JordanPlantStore.jpg",
+              url: "/img/JordanPlantStore.jpg",
               width: 1920,
               height: 1440,
               alt: "Jordan Lambrecht in Lincoln Nebraska",

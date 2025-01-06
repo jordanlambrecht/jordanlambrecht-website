@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Nav />
-      <main className='flex justify-center w-full bg-white align-center min-h-screen px-8 lg:px-12 py-16'>
+      <main className='max-w-screen overflow-hidden min-h-[calc(100vh-108px-24px)]'>
         {children}
       </main>
       <Footer />

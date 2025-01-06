@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   LinkedIn,
   Instagram,
@@ -9,17 +10,18 @@ function Footer() {
   return (
     <footer className='bg-gray'>
       <div className='max-w-7xl py-20 mx-auto justify-between'>
-        <div className='bg-opacity-25 bg-gray-400 w-full h-[1px]' />
+        {/* <div className='bg-opacity-25 bg-gray-400 w-full h-[1px]' /> */}
         <div className='flex justify-between mt-12'>
           <div>
+            <p className='text-gray-400 '>Thanks for hangin'</p>
             <span className='text-gray-400 text-md'>
-              © Copyright {new Date().getFullYear()}. All Rights Reserved
+              © {new Date().getFullYear()}
             </span>
           </div>
           <div className='flex gap-x-6'>
             <Instagram
               iconName={"Instagram"}
-              href={"https://instagram.com/jlambrecht265"}
+              href={"https://instagram.com/jordanlambrecht"}
             />
             <LinkedIn
               iconName={"LinkedIn"}

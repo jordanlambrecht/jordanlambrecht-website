@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Section from "@modules/Section";
+import InnerWrapper from "@parts/modules/InnerWrapper";
 import Link from "next/link";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
+import Section from "@parts/modules/Section";
 export default function Home() {
   return (
     <>
@@ -44,13 +45,13 @@ export default function Home() {
         url='https://jordanlambrecht.com'
         sameAs={[
           "http://www.facebook.com/jlambrecht265",
-          "http://instagram.com/jlambrecht265",
+          "http://instagram.com/jordanlambrecht",
           "http://www.linkedin.com/in/jordan-lambrecht-41393a80",
           "https://twitter.com/JordyJordyJordN",
         ]}
       />
       <Section id='landing' className={""}>
-        <div className='flex flex-col lg:flex-row gap-x-24 gap-y-16'>
+        <InnerWrapper className='flex flex-col lg:flex-row gap-x-24 gap-y-16'>
           <div className='w-full lg:w-3/5'>
             <Link
               href='/img/JordanPlantStore.jpg'
@@ -61,6 +62,7 @@ export default function Home() {
                 src={"/img/JordanPlantStore.jpg"}
                 width={1920}
                 height={1440}
+                priority
                 className={"cursor-pointer"}
                 alt={
                   "Jordan Lambrecht at Urban Trails nursery during the pandemic."
@@ -68,7 +70,7 @@ export default function Home() {
               />
             </Link>
           </div>
-          <div className='w-full lg:w-2/5 prose prose-slate prose-lg font-body'>
+          <div className='w-full lg:w-2/5 '>
             <p>
               Hi, I&apos;m Jordan Lambrecht, a Professional Something or Another
               based out of Lincoln, Nebraska.
@@ -81,8 +83,14 @@ export default function Home() {
               <Link href={"https://opeweeloped.us"}>web development</Link>, or
               any other outlet that involves making something exist that
               didn&apos;t before. When I&apos;m not staring at a computer,
-              I&apos;m probably building something, killing plants, or making
-              shitty pots.
+              I&apos;m probably building something, killing plants, or making{" "}
+              <Link
+                target={"_blank"}
+                href={"https://instagram.com/shitty_pots"}
+              >
+                shitty pots
+              </Link>
+              .
             </p>
 
             <p>
@@ -112,7 +120,12 @@ export default function Home() {
             </p>
             <p>I believe in you. ❤️</p>
           </div>
-        </div>
+        </InnerWrapper>
+      </Section>
+      <Section id='find-me' className=' bg-zinc-400'>
+        <InnerWrapper className='my-20'>
+          <h2>Come Hang</h2>
+        </InnerWrapper>
       </Section>
     </>
   );

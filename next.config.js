@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-import { withPlausibleProxy } from "next-plausible"
+const { withPlausibleProxy } = require("next-plausible")
 
 const nextConfig = {
   reactStrictMode: true,
@@ -22,5 +22,5 @@ const nextConfig = {
 }
 
 module.exports = withPlausibleProxy({
-  customDomain: "https://analytics.jordy.world",
+  customDomain: "https://analytics.jordy.world", // Point to your self-hosted Plausible instance
 })(nextConfig)

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import InnerWrapper from "@parts/modules/InnerWrapper";
-import Link from "next/link";
-import { NextSeo, SocialProfileJsonLd } from "next-seo";
-import Section from "@parts/modules/Section";
+import Image from "next/image"
+import InnerWrapper from "@parts/modules/InnerWrapper"
+import Link from "next/link"
+import { NextSeo, SocialProfileJsonLd } from "next-seo"
+import Section from "@parts/modules/Section"
 export default function Home() {
   return (
     <>
@@ -122,11 +122,6 @@ export default function Home() {
           </div>
         </InnerWrapper>
       </Section>
-      <Section id='find-me' className=' bg-zinc-400'>
-        <InnerWrapper className='my-20'>
-          <h2>Come Hang</h2>
-        </InnerWrapper>
-      </Section>
     </>
-  );
+  )
 }

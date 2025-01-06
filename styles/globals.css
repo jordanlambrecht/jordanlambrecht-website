@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 15px;
+  @apply font-quasimoda;
+}
+h1,
+nav.span {
+  @apply font-fields;
+}
+p {
+  @apply text-slate-600 my-4 pb-3 antialiased;
+}
+
+a,
+.prose p a {
+  @apply text-coral no-underline transition duration-75 hover:text-opacity-80 font-semibold;
+}
+
 html,
 body {
   @apply bg-gray-300 p-3;

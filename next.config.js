@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import { withPlausibleProxy } from "next-plausible"
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -10,8 +12,15 @@ const nextConfig = {
           "https://jordanlambrecht.notion.site/Filaments-f9903bf00c8b47e686cafb96b465340b",
         permanent: true,
       },
-    ];
+      {
+        source: "/print-requests",
+        destination: "/print-orders",
+        permanent: true,
+      },
+    ]
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = withPlausibleProxy({
+  customDomain: "https://analytics.jordy.world",
+})(nextConfig)

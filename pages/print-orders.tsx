@@ -1,4 +1,4 @@
-import Section from "@modules/Section";
+import Section from "@parts/modules/InnerWrapper";
 import Link from "next/link";
 import { NextSeo, SocialProfileJsonLd } from "next-seo";
 import Script from "next/script";
